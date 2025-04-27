@@ -1,0 +1,22 @@
+# General
+.DS_Store
+*.log
+*.swp
+.idea/
+.vscode/
+*.iml
+
+# Backend (Java/Maven)
+backend/target/
+backend/.settings/
+backend/.project
+backend/.classpath
+
+# Frontend (Angular)
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/cache
+
+# Environment files
+backend/src/main/resources/application-*.yml
+frontend/src/environments/environment*.ts
