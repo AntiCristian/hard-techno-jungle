@@ -1,22 +1,91 @@
-# General
-.DS_Store
-*.log
-*.swp
-.idea/
-.vscode/
-*.iml
-
-# Backend (Java/Maven)
+### BACKEND (Spring Boot/Maven) ###
 backend/target/
-backend/.settings/
-backend/.project
+backend/.idea/
+backend/*.iml
 backend/.classpath
+backend/.project
+backend/.settings/
+backend/bin/
+backend/logs/
+backend/*.log
+backend/*.pid
+backend/.factorypath
 
-# Frontend (Angular)
+# Maven wrapper (opcional si usas el wrapper)
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+!backend/mvnw
+!backend/mvnw.cmd
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# Archivos de entorno y configuración
+backend/.env*
+backend/application*.properties
+backend/application*.yml
+backend/config/application-*.yml
+
+# Docker
+backend/docker-compose*
+backend/Dockerfile
+backend/docker-build/
+
+
+### FRONTEND (Angular) ###
 frontend/node_modules/
 frontend/dist/
-frontend/.angular/cache
+frontend/.angular/
+frontend/.cache/
+frontend/coverage/
+frontend/tmp/
+frontend/.npm
+frontend/.yarn
+frontend/yarn.lock
 
-# Environment files
-backend/src/main/resources/application-*.yml
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Archivos de entorno
 frontend/src/environments/environment*.ts
+frontend/.env*
+
+# Build y caché
+frontend/.rpt2_cache/
+frontend/.sass-cache/
+frontend/tsconfig.tsbuildinfo
+
+
+### GENERAL ###
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+*.swp
+*.swo
+*.sublime*
+
+# Archivos temporales
+*.tmp
+*.bak
+*.patch
+*.orig
+~$*
+
+# Paquetes comprimidos
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.7z
+
+# Documentación generada
+docs/_build/
+*.pdf
+*.docx
+*.xlsx
